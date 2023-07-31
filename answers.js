@@ -137,3 +137,7 @@ console.log(secondHalf);
 //After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
 
 favMovies.indexOf ('Fast and Furious')
+
+// onst whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+["Lucinda", "Jacc", "Neff", "Snoop"],
+["Petunia", ["Baked Goods", "Waldo"]]];
