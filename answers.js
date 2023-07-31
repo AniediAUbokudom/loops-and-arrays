@@ -62,6 +62,19 @@ wolfy[0] = "Gameboy" //replace name with Gameboy
 console.log(wolfy);
 
 
+//Yell at the Ninja Turtles
+// Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michelangelo"];
+console.log(ninjaTurtles); // Output: ["Donatello", "Leonardo", "Raphael", "Michelangelo"]
+
+//Use a for of loop to call toUpperCase()on each of them and print out the result.
+
+
+for (let element of ninjaTurtles) {
+    let changeCaseName = element.toUpperCase();
+    console.log(changeCaseName);
+};
 
 
 
