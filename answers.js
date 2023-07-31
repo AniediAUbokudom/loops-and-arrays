@@ -76,6 +76,64 @@ for (let element of ninjaTurtles) {
     console.log(changeCaseName);
 };
 
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+//Console log: the index of Titanic
+
+console.log(favMovies.indexOf('Titanic'));
+
+ //1. use the .sort method Thought question: what did this do to the array? Did it permanently alter it?
 
 
+favMovies.sort();
 
+console.log(favMovies); // the sort method permanently altered the indices of the array.
+
+// 2.Use the method pop
+favMovies.pop()
+console.log(favMovies)
+
+
+//3. Reverse the array
+favMovies.reverse();
+console.log(favMovies);
+
+
+//4. push"Guardians of the Galaxy"
+favMovies.push("Guardians of the Galaxy");
+console.log(favMovies);
+
+//5. Use the shiftmethod
+
+favMovies.shift();
+console.log(favMovies);
+
+6. //unshift- what does it return?
+favMovies.unshift();
+console.log(favMovies);
+
+
+//splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
+
+
+const removeIndex = favMovies.indexOf('Django Unchained');
+if (removeIndex !== -1) {
+  favMovies.splice(removeIndex, 1, 'Avatar');
+}
+
+console.log( favMovies);
+
+//slicethe last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
+
+
+const midIndex = Math.floor(favMovies.length / 2);
+const secondHalf = favMovies.slice(midIndex);
+
+console.log("Last half of the array:", secondHalf);// the array remains unchanged
+// 9. store the value of your slicein a variable, console.log it - Thought question: what is going on here?
+
+console.log(secondHalf);
+
+//After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
+
+favMovies.indexOf ('Fast and Furious')
