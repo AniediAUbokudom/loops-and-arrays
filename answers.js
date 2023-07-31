@@ -140,4 +140,4 @@ favMovies.indexOf ('Fast and Furious')
 
 // onst whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
 ["Lucinda", "Jacc", "Neff", "Snoop"],
-["Petunia", ["Baked Goods", "Waldo"]]];
+["Petunia", ["Baked Goods", "Waldo"]];
